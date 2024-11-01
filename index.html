@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tano Frutos Secos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <header class="navbar">
+        <img class="logo" src="img/logo-salomon-frutos-secos-PNG (1).png" alt="Logo">
+        <div class="cart-container">
+            <img src="img/cart.png" alt="Carrito" class="cart-icon" id="cartIcon">
+            <span id="cartCount" class="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="products-section">
+        <div class="product-container"></div>
+    </section>
+
+    <div class="cart-dropdown" id="cartDropdown">
+        <h2>Carrito de Compras</h2>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="total-price">
+            <strong>Total:</strong> <span id="cartTotal">$0.00</span>
+        </div>
+        <button id="clearCartButton">Vaciar Carrito</button>
+        <button id="payButton">Pagar</button>
+    </div>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "nombre": "Pistachos",
+        "precio": 10.00,
+        "imagen": "img/pistachos.jpg"
+    },
+    {
+        "id": "2",
+        "nombre": "Avellanas",
+        "precio": 15.00,
+        "imagen": "img/avellanas.jpg"
+    },
+    {
+        "id": "3",
+        "nombre": "Nueces",
+        "precio": 12.00,
+        "imagen": "img/nueces.jpg"
+    }
+]
