@@ -14,6 +14,7 @@ cartIcon.addEventListener('click', () => {
 });
 
 
+
 function agregarAlCarrito(id, nombre, precio, img) {
     const productoExistente = cart.find(item => item.id === id);
     if (productoExistente) {
@@ -22,7 +23,19 @@ function agregarAlCarrito(id, nombre, precio, img) {
         cart.push({ id, nombre, precio, quantity: 1, img });
     }
     actualizarCarrito();
+
+    
+    Swal.fire({
+        title: 'Producto agregado',
+        text: `${nombre} se ha añadido al carrito.`,
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 1500, 
+        toast: true,
+        position: 'top-end'
+    });
 }
+
 
 
 function actualizarCarrito() {
